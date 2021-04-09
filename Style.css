@@ -1,20 +1,90 @@
 body{
+  background: gray;
+  color: white;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+header{
+  background-color: black;
+  padding: 30px;
+}
+ul{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-align: center;
+}
+li{
+  display: inline-block;
+  margin-right: 20px;
+}
+section{
+  background-color: white;
+  color: gray;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+}
+section.tripple_section div{
+  background-color: red;
+  margin: auto;
+  width: 15%;
+  height: 70%;
+}
+
+footer{
+  background-color: black;
+}
+section.lower_section{
+  background-color: chartreuse;
+}
+
+aside{
+  background-color: green;
+  padding: 1%;
+  width: 15%;
+  
+  
+}
+nav input{
+  float: right;
+}
+
+section.tripple_section{
+  height: 500px;
+}
+section.tripple_section div.right{
+  background-color: greenyellow;
+}
+article{
+  background-color: green;
+  width: 10%;
+}
+header nav ul li a{
+  text-decoration: none;
+}
+header nav ul li a:hover{
+  background-color: #ddd;
+  color: black;
+}
+/* body{
   background-color: black;
   color: white;
   
-}
+} */
 /*Add a black background color to the top navigation */
-.topnav {
+/* .topnav {
 background-color: #333;
 overflow: hidden;
  margin-left: -15px;
 margin-right: -15px;
 margin-top: -10px;  
 position: relative;
-}
+} */
 
 /* Style the links inside the navigation bar */
-.topnav a {
+/* .topnav a {
 float: left;
 color: #f2f2f2;
 text-align: center;
@@ -22,20 +92,20 @@ padding: 14px 16px;
 text-decoration: none;
 font-size: 17px;
 
-}
+} */
 
 /* Change the color of links on hover */
-.topnav a:hover {
+/* .topnav a:hover {
 background-color: #ddd;
 color: black;
-}
+} */
 
 /* Add a color to the active/current link */
-.topnav a.active {
+/* .topnav a.active {
   background-color: #4CAF50;
   color: white;
-}
-.topnav input[type=text] {
+} */
+/* .topnav input[type=text] {
   
   float: right;
   padding: 6px;
@@ -43,9 +113,9 @@ color: black;
   margin-top: 8px;
   margin-right: 16px;
   font-size: 17px;
-}
+} */
 
- aside{
+/*  aside{
   background-color: #24292e;
   color: white;
   width: 20%;
@@ -54,9 +124,9 @@ color: black;
   margin-left: -8px;
   text-align: center;
   float: left;
-} 
+}  */
 
-main{  
+/* main{  
 width: 80%;
 background-color: green;
 margin-left: 25%;
@@ -64,4 +134,4 @@ margin-right: 25%;
 position:sticky;
 
 
-}
+} */
