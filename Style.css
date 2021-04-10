@@ -6,31 +6,43 @@ body{
   padding: 0;
 }
 header{
-  background-color: black;
-  padding: 30px;
+  background-color: rgb(44, 44, 53);
+  padding: 0;
+  border-bottom: solid;
+  border-color: black;
 }
-ul{
+header nav{
+  background-color: gray;
+  padding: 1%;
+  border-bottom: solid;
+  border-color: black;
+}
+header h1{
+  padding-left: 10%;
+}
+header nav ul{
   margin: 0;
   padding: 0;
   list-style-type: none;
-  text-align: center;
+  text-align: left;
 }
-li{
+header nav ul li{
   display: inline-block;
   margin-right: 20px;
 }
 section{
-  background-color: white;
+  background-color: rgb(29, 29, 29);
   color: gray;
   padding: 0;
   display: flex;
   flex-direction: row;
 }
-section.tripple_section div{
-  background-color: red;
+section.tripple_section div.home{
+  background-color: rgb(42, 42, 63);
   margin: auto;
-  width: 15%;
+  width: 20%;
   height: 70%;
+  border: solid;
 }
 
 footer{
@@ -41,9 +53,12 @@ section.lower_section{
 }
 
 aside{
-  background-color: green;
+  background-color: rgb(40, 39, 58);
   padding: 1%;
   width: 15%;
+  display: flex;
+  flex-direction: column;
+  border-right: solid;
   
   
 }
@@ -53,13 +68,13 @@ nav input{
 
 section.tripple_section{
   height: 500px;
+  border-bottom: solid;
 }
-section.tripple_section div.right{
-  background-color: greenyellow;
-}
+
 article{
-  background-color: green;
+  background-color: rgb(40, 39, 58);
   width: 10%;
+  border-left: solid;
 }
 header nav ul li a{
   text-decoration: none;
@@ -67,6 +82,10 @@ header nav ul li a{
 header nav ul li a:hover{
   background-color: #ddd;
   color: black;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 /* body{
   background-color: black;
