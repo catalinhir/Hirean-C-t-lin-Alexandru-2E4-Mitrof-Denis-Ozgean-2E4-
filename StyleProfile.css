@@ -1,0 +1,253 @@
+body{
+  background-color: black;
+  color: white;
+  
+}
+/*Add a black background color to the top navigation */
+.topnav {
+background-color: #333;
+overflow: hidden;
+ margin-left: -15px;
+margin-right: -15px;
+margin-top: -10px;  
+position: relative;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+float: left;
+color: #f2f2f2;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+font-size: 17px;
+
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+background-color: #ddd;
+color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+.topnav input[type=text] {
+  
+  float: right;
+  padding: 6px;
+  border: none;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 17px;
+}
+
+ aside{
+  background-color: #24292e;
+  color: white;
+  width: 20%;
+  height: 100vh;
+  margin-top: -20px;
+  margin-left: -8px;
+  text-align: center;
+  float: left;
+} 
+
+.userinfo{  
+  width: 100%;
+  margin-left: 25%;
+  margin-right: 25%;
+  position:sticky; 
+}
+
+.userinfo img{
+  margin-top:75px;
+  margin-left:50px;
+  width:250px;
+  height:200px;
+}
+.userinfo p1{
+  margin-left:100px;
+  font-size: 25px;
+}
+a{
+  color:whitesmoke;
+  text-decoration: none;
+}
+
+#circle1 ,#circle2, #circle3 {
+  margin-left:50px;
+  width: 20px;
+  height: 20px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  float:left;
+}
+
+#circle1{
+  background: green;
+}
+
+#circle2{
+  background: yellow;
+}
+
+#circle3{
+  background: red;
+}
+
+.userinfo buttonstatus{
+  display:inline;
+  color: whitesmoke; 
+  margin-top: -20px;
+  background-color: black;
+  border-color:#7D7A79;
+  border-style:groove;
+  border-width: 2px; 
+  padding: 20px; 
+  padding-top:10px; 
+  padding-bottom: 10px; 
+  cursor:pointer;
+  border-radius: 4px;
+}
+
+.userinfo buttongreen, buttonyellow, buttonred{
+  color: black; 
+  border-color:#7D7A79;
+  border-style:groove;
+  border-width: 2px; 
+  padding: 20px; 
+  padding-top:10px; 
+  padding-bottom: 10px; 
+  cursor:pointer;
+  border-radius: 4px;
+}
+
+.userinfo buttongreen{
+  background-color: green;
+}
+
+.userinfo buttonyellow{
+  background-color: yellow;
+}
+
+.userinfo buttonred{
+  background-color: red;
+}
+
+.userinfo p{
+  display: inline;
+}
+.userinfo button{
+  margin-left:100px;
+  color: whitesmoke; 
+  background-color: black;
+  border-color:#7D7A79;
+  border-style:groove;
+  border-width: 2px; 
+  border-radius:4px;
+  padding: 10px; 
+  padding-top:5px; 
+  padding-bottom: 5px; 
+  cursor:pointer;
+}
+
+.userinfo p2{
+  margin-left:100px;
+  color: whitesmoke; 
+  background-color: black;
+  border-color:whitesmoke;
+  border-style:groove;
+  border-width: 2px; 
+  border-radius:4px;
+  padding: 20px; 
+  padding-top:10px; 
+  padding-bottom: 10px; 
+}
+  
+div.description{
+  clear: left;
+  float:right;
+  margin-top:-550px;
+  margin-right:150px;
+  max-width:600px;
+  word-break: break-all;
+  color: whitesmoke; 
+  border-color: #7D7A79;
+  border-style:groove;
+  border-radius:30px;
+  border-width: 2px; 
+  padding:20px;
+}
+
+#mydescription{
+  color: whitesmoke; 
+  border-color: #7D7A79;
+  border-style:groove;
+  border-width: 2px; 
+  padding:20px;
+  padding-right: 100px;
+  padding-bottom: 50px;
+  transition: all 0.5s;
+}
+
+#mycontribution{
+  color: whitesmoke;
+  border-color:#7D7A79;  
+  border-style:groove;
+  border-width: 2px; 
+  padding-left: 20px;
+  padding:20px;
+  padding-right: 100px;
+  padding-bottom: 50px;
+  transition: all 1s;
+}
+
+#name[type=text]{
+  margin-left:75px;
+  color:white;
+  background-color: black;
+  padding: 12px 20px;
+  border: 1px solid #7D7A79;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+div.descriptionEdit{
+  clear:left;
+  float:right;
+  margin-top:-550px;
+  margin-right:650px;
+} 
+
+#description[type=text]{
+  color:white;
+  overflow-wrap: break-word;
+  width:100%;
+  height:100%;
+  background-color: black;
+  padding: 20px;
+  padding-right:50px;
+  padding-bottom:100px;
+  border: 1px solid #7D7A79;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.userinfo buttonsave{
+  margin-left:300px;
+  color: whitesmoke; 
+  background-color: black;
+  border-color:#7D7A79;
+  border-style:groove;
+  border-width: 2px; 
+  border-radius:4px;
+  padding: 20px; 
+  padding-top:10px; 
+  padding-bottom: 10px; 
+  cursor:pointer;
+}
