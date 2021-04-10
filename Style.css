@@ -8,7 +8,7 @@ body{
 
 }
 header{
-  background-color: rgb(20, 20, 124);
+  background-color: rgb(26, 26, 56);
   padding: 0;
   border-bottom: solid;
   border-color: black;
@@ -145,12 +145,12 @@ article{
 
 
 section.signin_section{
-  
+  background-image: url("images/planet.png");
   height: 100vh;
   border-bottom: solid;
 }
 section.signin_section div.SignIn{
-  background-color: rgb(42, 42, 63);
+  background-color: rgb(42, 42, 63, 0.7);
   margin: auto;
   width: 250px;
   height: 70%;
