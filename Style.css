@@ -12,7 +12,7 @@ header{
   border-color: black;
 }
 header nav{
-  background-color: gray;
+  background-color: rgba(128, 128, 128, 0.651);
   padding: 1%;
   border-bottom: solid;
   border-color: black;
@@ -30,6 +30,17 @@ header nav ul li{
   display: inline-block;
   margin-right: 20px;
 }
+header nav ul li a{
+  text-decoration: none;
+}
+header nav ul li a:hover{
+  background-color: #ddd;
+  color: black;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
 section{
   background-color: rgb(29, 29, 29);
   color: gray;
@@ -43,6 +54,7 @@ section.tripple_section div.home{
   width: 20%;
   height: 70%;
   border: solid;
+  
 }
 
 footer{
@@ -50,6 +62,7 @@ footer{
 }
 section.lower_section{
   background-color: chartreuse;
+  
 }
 
 aside{
@@ -59,15 +72,18 @@ aside{
   display: flex;
   flex-direction: column;
   border-right: solid;
+  border-color: black;
   
   
 }
 nav input{
   float: right;
+  border: inset;
+  border-color: gray;
 }
 
 section.tripple_section{
-  height: 500px;
+  height: 700px;
   border-bottom: solid;
 }
 
@@ -75,18 +91,41 @@ article{
   background-color: rgb(40, 39, 58);
   width: 10%;
   border-left: solid;
+  border-color: black;
 }
-header nav ul li a{
-  text-decoration: none;
+
+
+
+
+
+section.signin_section{
+  height: 700px;
+  border-bottom: solid;
 }
-header nav ul li a:hover{
-  background-color: #ddd;
-  color: black;
+section.signin_section div.SignIn{
+  background-color: rgb(42, 42, 63);
+  margin: auto;
+  width: 20%;
+  height: 70%;
+  border: solid;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+header.signin {
+  background-color: rgb(44, 44, 53);
+  padding: 0;
+  margin-top: 0;
+  border-bottom: solid;
+  border-color: black;
+}
+header.signin h1{
+  margin-top: 0;
   padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 5px;
-  padding-right: 5px;
 }
+
+
+
 /* body{
   background-color: black;
   color: white;
