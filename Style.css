@@ -198,8 +198,55 @@ section.signin_section div.SignIn form{
   text-align: center;
 }
 
-
-
+section.content{
+  display: flex;
+  flex-direction: column ;
+  background-color: white;
+  height: 100vh;
+  color: black;
+}
+section#introduction{
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  color: black;
+}
+section#overallDescription{
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  color: black;
+}
+section#externalRequirements{
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  color: black;
+}
+section#systemFeatures{
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  color: black;
+}
+section#nonfunctionalFeatures{
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  color: black;
+}
+section#bibliography{
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  color: black;
+}
+section#authors{
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  color: black;
+}
 
 footer{
   background-color: black;
