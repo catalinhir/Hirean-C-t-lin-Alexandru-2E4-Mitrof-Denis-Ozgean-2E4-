@@ -1,55 +1,77 @@
 <!DOCTYPE html>
 <html lang="ro">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Page!</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
 
-    <head>
-        <title>
-            Profil
-        </title>
-        <link rel="stylesheet" href="StyleProfile.css">
-    </head>
-    <body>
-        <div class="topnav">
-            <a class="active" href="#home">Home</a>
-            <a href="#news">News</a>
-            <a href="#contact">Contact</a>
-            <a href="#about">About</a>
-            <input type="text" placeholder="Search..">
-        </div>
 
-        <aside>
-            <h2>
-                My article
-            </h2>
-            <p>
-                Acesta <em><strong>este</strong> un</em> paragraf
-            </p>
-            <hr />
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-            
-        </aside> 
-        <div class="userinfo">
-            <img src="images/dramaqueen.png">
-            <br><br>
-            <p1 > Drama queen</p1>
-            <br><br>
-            <div id="circle1"> 
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="Homepage.html"> Home</a></li>
+                <li><a href="AboutUs.html"> About Us</a></li>
+                <li><a href="Contact.html"> Contact</a></li>
+                
+                
+            </ul>
+            <div class="col2">
+                <div class="dropdown">
+                    Profile
+                    <div class="dropdown-content">
+                        <a href="ProfilePage.html">Your Profile</a>
+                        <br>
+                        <a href="EditProfile.html">Edit Profile</a>
+                    </div>
+                </div>
+                <input class="searchbar" type="text" placeholder="Search..">
             </div>
-            &nbsp; &nbsp;
-            <p> Hi there! I'm using Paste It!</p>
+            
+            
+            
+        </nav>
+        <img src="images/Logoo.png" alt="Logo" width="200" height="80">
+    </header>
+    
+    
+    <section class="tripple_section">
+        <aside >
+            <h1>Repositories:</h1>
+            <ul>
+                <li>rep1</li>
+                <li>rep2</li>
+                <li>rep3</li>
+                <li>rep4</li>
+            </ul>
+        </aside>
+        <div class="profile userinfo">
+            <img src="images/dramaqueen.png" alt="avatar">
+            <br><br>
+            <p style="font-size:25px;"> Drama queen</p>
             <br><br><br><br>
-            <button><a href="EditProfile.html">Edit your profile</a></button>
+            <div id="circle1"> </div>
+            &nbsp; &nbsp;
+            <p style="display: inline;"> Hi there! I'm using Paste It!</p>
+            <br><br><br><br><br><br>
+            <button>Edit your profile</button>
            
         </div>
-        <div class="description">
+        <div class="profile description">
             <p>A description about me</p>  <hr/> <br>
-            <div id="mydescription"> I'm a basic queen.</div>
+            <div id="mydescription"> I'm a basic queen. aaaa aaaaa aaaaa aa aaa  aaa saa aaaaaa aaaa aa aaaaa aa aaaa aa aa aaaaa  aaaa   aa aaa aaaa aaa a  aaaaaa aaaaa aa aaa aaaaa aaaa</div>
             <br><br>
             <p>My contribution</p>  <hr/> <br>
-            <div id="mycontribution">  No activity yet, I'm lazy. </div>
+            <div id="mycontribution">  No activity yet, I'm lazy.  </div>
         </div>
-
-            
-    </body>
+    </section>
+    
+    
+    <section class="lower_section">
+        lower section
+    </section>
+    <footer>footer</footer>
+</body>
 </html>
