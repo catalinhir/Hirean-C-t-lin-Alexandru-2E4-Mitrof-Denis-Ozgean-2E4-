@@ -1,85 +1,278 @@
 body{
-  background-color: black;
+  background-color: gray;
   color: white;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  height: fit-content;
+
+}
+header{
+  background-color: rgb(26, 26, 56);
+  padding: 0;
+  border-bottom: solid;
+  border-color: black;
+}
+header nav{
+  background-color: rgba(41, 45, 58, 0.651);
+  padding: 1%;
+  border-bottom: solid;
+  border-color: black;
+  display: grid;
+  grid-template-columns: 70% 30%;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    ". .";
+}
+header nav div.col2{
+  display: grid;
+  grid-template-columns: 40%, 60%;
+  grid-template-rows: 1fr;
+  gap: 0px, 0px;
+  grid-template-areas:
+    ". .";
+}
+header nav div.col2 div.dropdown{
+  position: relative;
+  display: inline-block;
+}
+header nav div.col2 div.dropdown:hover{
+  background-color: #ddd;
+  color: black;
+}
+header nav div.col2 div.dropdown div.dropdown-content{
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 100px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+header nav div.col2 div.dropdown:hover div.dropdown-content{
+  display: block;
+}
+header nav div.col2 div.dropdown div.dropdown-content a{
+  text-decoration: none;
+}
+header nav div.col2 div.dropdown div.dropdown-content a:hover{
+  background-color: #ddd;
+  color: black;
   
 }
-/*Add a black background color to the top navigation */
-.topnav {
-background-color: #333;
-overflow: hidden;
- margin-left: -15px;
-margin-right: -15px;
-margin-top: -10px;  
-position: relative;
+
+
+header h1{
+  padding-left: 10%;
 }
-
-/* Style the links inside the navigation bar */
-.topnav a {
-float: left;
-color: #f2f2f2;
-text-align: center;
-padding: 14px 16px;
-text-decoration: none;
-font-size: 17px;
-
+header nav ul{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-align: left;
 }
-
-/* Change the color of links on hover */
-.topnav a:hover {
-background-color: #ddd;
-color: black;
+header nav ul li{
+  display: inline-block;
+  margin-right: 20px;
 }
-
-/* Add a color to the active/current link */
-.topnav a.active {
-  background-color: #4CAF50;
+header nav input.searchbar{
+  display: flex;
+  justify-content: right;
+  width:auto;
+}
+header nav ul li a{
   color: white;
+  text-decoration: none;
 }
-.topnav input[type=text] {
-  
-  float: right;
-  padding: 6px;
-  border: none;
-  margin-top: 8px;
-  margin-right: 16px;
-  font-size: 17px;
+header nav ul li a:hover{
+  background-color: #ddd;
+  color: black;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
- aside{
-  background-color: #24292e;
-  color: white;
+
+
+
+
+
+
+section{
+  background-color: rgb(29, 29, 29);
+  color: gray;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+}
+section.tripple_section div.home{
+  background-color: rgb(42, 42, 63, 0.4);
+  margin: auto;
   width: 20%;
-  height: 100vh;
-  margin-top: -20px;
-  margin-left: -8px;
-  text-align: center;
-  float: left;
-} 
+  height: 70%;
+  border: solid;
+  
+}
 
-.userinfo{  
-  width: 100%;
-  margin-left: 25%;
-  margin-right: 25%;
-  position:sticky; 
+
+section.lower_section{
+  background-color: chartreuse;
+  
+}
+
+aside{
+  background-color: rgb(40, 39, 58, 0.5);
+  padding: 1%;
+  width: 15%;
+  display: flex;
+  flex-direction: column;
+  border-right: solid;
+  border-color: black;
+  
+  
+}
+nav ul li input{
+  float: right;
+  border: inset;
+  border-color: gray;
+  margin-top: 0;
+}
+
+section.tripple_section{
+  background-image: url("images/planet.png");
+  height: 100vh;
+  border-bottom: solid;
+}
+
+article{
+  background-color: rgb(40, 39, 58, 0.5);
+  width: 10%;
+  border-left: solid;
+  border-color: black;
+}
+
+
+
+
+
+section.signin_section{
+  background-image: url("images/planet.png");
+  height: 100vh;
+  border-bottom: solid;
+}
+section.signin_section div.SignIn{
+  background-color: rgb(42, 42, 63, 0.7);
+  margin: auto;
+  width: 250px;
+  height: 70%;
+  border: solid;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+section.signin_section div.SignIn a{
+  text-decoration: none;
+}
+section.signin_section div.SignIn a:hover{
+  background-color: #ddd;
+  color: black;
+  
+}
+
+header.signin {
+  background-color: rgb(44, 44, 53);
+  padding: 0;
+  margin-top: 0;
+  border-bottom: solid;
+  border-color: black;
+}
+header.signin h1{
+  margin-top: 0;
+  padding-top: 10px;
+}
+section.signin_section div.SignIn form{
+  text-align: center;
+}
+
+section.content{
+  display: flex;
+  flex-direction: column ;
+  background-color: white;
+  height: 100vh;
+  color: black;
+}
+section#introduction{
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  color: black;
+}
+section#overallDescription{
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  color: black;
+}
+section#externalRequirements{
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  color: black;
+}
+section#systemFeatures{
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  color: black;
+}
+section#nonfunctionalFeatures{
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  color: black;
+}
+section#bibliography{
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  color: black;
+}
+section#authors{
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  color: black;
+}
+
+footer{
+  background-color: black;
+}
+
+
+/*-----Profile CSS-----*/
+section.tripple_section div.profile{
+  color:whitesmoke;
+  margin: auto;
+  width: 20%;
+  height: 70%;
+  border: solid;
+  border-radius:50px;
+  padding:5%;
+  text-align:center;
 }
 
 .userinfo img{
-  margin-top:75px;
-  margin-left:50px;
-  width:250px;
-  height:200px;
-}
-.userinfo p1{
-  margin-left:100px;
-  font-size: 25px;
-}
-a{
-  color:whitesmoke;
-  text-decoration: none;
+  position: center;
 }
 
+
+
 #circle1 ,#circle2, #circle3 {
-  margin-left:50px;
+  margin-left:-3%;
   width: 20px;
   height: 20px;
   -webkit-border-radius: 10px;
@@ -100,55 +293,15 @@ a{
   background: red;
 }
 
-.userinfo buttonstatus{
-  display:inline;
-  color: whitesmoke; 
-  margin-top: -20px;
-  background-color: black;
-  border-color:#7D7A79;
-  border-style:groove;
-  border-width: 2px; 
-  padding: 20px; 
-  padding-top:10px; 
-  padding-bottom: 10px; 
-  cursor:pointer;
-  border-radius: 4px;
-}
 
-.userinfo buttongreen, buttonyellow, buttonred{
-  color: black; 
-  border-color:#7D7A79;
-  border-style:groove;
-  border-width: 2px; 
-  padding: 20px; 
-  padding-top:10px; 
-  padding-bottom: 10px; 
-  cursor:pointer;
-  border-radius: 4px;
-}
 
-.userinfo buttongreen{
-  background-color: green;
-}
-
-.userinfo buttonyellow{
-  background-color: yellow;
-}
-
-.userinfo buttonred{
-  background-color: red;
-}
-
-.userinfo p{
-  display: inline;
-}
 .userinfo button{
-  margin-left:100px;
+  position:center;
   color: whitesmoke; 
-  background-color: black;
+  background-color: rgb(29, 29, 29);
   border-color:#7D7A79;
   border-style:groove;
-  border-width: 2px; 
+  border-width: 4px; 
   border-radius:4px;
   padding: 10px; 
   padding-top:5px; 
@@ -156,98 +309,107 @@ a{
   cursor:pointer;
 }
 
-.userinfo p2{
-  margin-left:100px;
-  color: whitesmoke; 
-  background-color: black;
-  border-color:whitesmoke;
-  border-style:groove;
-  border-width: 2px; 
-  border-radius:4px;
-  padding: 20px; 
-  padding-top:10px; 
-  padding-bottom: 10px; 
-}
-  
-div.description{
-  clear: left;
-  float:right;
-  margin-top:-550px;
-  margin-right:150px;
-  max-width:600px;
-  word-break: break-all;
-  color: whitesmoke; 
-  border-color: #7D7A79;
-  border-style:groove;
-  border-radius:30px;
-  border-width: 2px; 
-  padding:20px;
-}
 
-#mydescription{
+#mydescription,#mycontribution{
+  word-wrap:break-word;
   color: whitesmoke; 
   border-color: #7D7A79;
   border-style:groove;
   border-width: 2px; 
   padding:20px;
-  padding-right: 100px;
-  padding-bottom: 50px;
   transition: all 0.5s;
 }
 
-#mycontribution{
-  color: whitesmoke;
-  border-color:#7D7A79;  
-  border-style:groove;
-  border-width: 2px; 
-  padding-left: 20px;
-  padding:20px;
-  padding-right: 100px;
-  padding-bottom: 50px;
-  transition: all 1s;
+div.editinfo{
+  color:whitesmoke;
+  margin: auto;
+  width: 50%;
+  border: solid;
+  border-radius:50px;
+  padding:5%;
 }
 
-#name[type=text]{
-  margin-left:75px;
-  color:white;
-  background-color: black;
-  padding: 12px 20px;
-  border: 1px solid #7D7A79;
-  border-radius: 4px;
-  box-sizing: border-box;
+.editinfo img{
+  padding-right:10%;
 }
 
 div.descriptionEdit{
-  clear:left;
-  float:right;
-  margin-top:-550px;
-  margin-right:650px;
-} 
+  display:inline-block;
 
-#description[type=text]{
+}
+
+#name[type=text],#description[type=text]{
   color:white;
-  overflow-wrap: break-word;
-  width:100%;
-  height:100%;
   background-color: black;
-  padding: 20px;
-  padding-right:50px;
-  padding-bottom:100px;
-  border: 1px solid #7D7A79;
+  border: 2px solid #7D7A79;
   border-radius: 4px;
   box-sizing: border-box;
 }
 
-.userinfo buttonsave{
-  margin-left:300px;
-  color: whitesmoke; 
+#name[type=text]{
+  margin-left:5%;
+  padding: 12px 20px;
+}
+
+#description[type=text]{
+  padding: 20px;
+  padding-right:10%;
+  padding-bottom:20%;
+  
+}
+
+div.status:hover{
+  text-decoration: underline;
+  display:inline;
+}
+
+.editinfo p1,p2,p3{
+  display:inline;
+  color:whitesmoke;
+  background-color:rgb(29, 29, 29);
+  cursor:pointer;
+  padding-right:100px;
+}
+
+.editinfo p1:hover{
+  text-decoration: underline;
+  color:green;
+}
+
+.editinfo p2:hover{
+  text-decoration: underline;
+  color:yellow;
+}
+
+.editinfo p3:hover{
+  text-decoration: underline;
+  color:red;
+}
+
+.editinfo button{
+  color:white;
   background-color: black;
-  border-color:#7D7A79;
-  border-style:groove;
-  border-width: 2px; 
-  border-radius:4px;
+  border: 2px solid #7D7A79;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-left:300px;
   padding: 20px; 
   padding-top:10px; 
   padding-bottom: 10px; 
   cursor:pointer;
+  display:flex;
+  justify-content: center;
+} 
+
+@media only screen and (max-width: 1375px) {
+  .editinfo button1,button2,button3{
+    padding-right:50px;
+  }
+}
+@media only screen and (max-width: 1050px) {
+  div.editinfo{
+    clear:both;
+    text-align:center;
+  }
+  
 }
