@@ -127,43 +127,43 @@
         <h2>Overall description</h2>
         <h3 id="productPerspective"> Product Perspective</h3>
         <p>
-            Describe the context and origin of the product being specified in this SRS. For example, state whether this product is a follow-on member of a product family, a replacement for certain existing systems, or a new, self-contained product. If the SRS defines a component of a larger system, relate the requirements of the larger system to the functionality of this software and identify interfaces between the two. A simple diagram that shows the major components of the overall system, subsystem interconnections, and external interfaces can be helpful.
+            The product is a new, self-contained one, inspired in many ways by an already existing platform because of it's similar scope, and is built for university purposes.
         </p>
         <h3 id="productFunctions">Product Functions</h3>
-        <p>
-            Summarize the major functions the product must perform or must let the user perform. Details will be provided in Section 3, so only a high level summary (such as a bullet list) is needed here. Organize the functions to make them understandable to any reader of the SRS. A picture of the major groups of related requirements and how they relate, such as a top level data flow diagram or object class diagram, is often effective.
-        </p>
+        <ul style="list-style-type:disc">
+            <li> Register and Log in </li>
+            <li> Uploading documents </li>
+            <li> Searching and rating other users's codes </li>
+            <li> Keeping history of activity and users's contribution to the platform</li>
+            <li> Setting the personal profile and individual attributes</li>
+            <li> The possibility to navigate without an account</li>
+            <li> Being always in touch with the best codes</li>
+        </ul>
         <h3 id="operatingEnvironment"> Operating Environment</h3>
         <p>
-            Describe the environment in which the software will operate, including the hardware platform, operating system and versions, and any other software components or applications with which it must peacefully coexist.
+            The software will operate in any environment and will be available for all operating systems.
         </p>
         <h3 id="design"> Design and Implementation Constraints</h3>
-        <p>
-            Describe any items or issues that will limit the options available to the developers. These might include: corporate or regulatory policies; hardware limitations (timing requirements, memory requirements); interfaces to other applications; specific technologies, tools, and databases to be used; parallel operations; language requirements; communications protocols; security considerations; design conventions or programming standards (for example, if the customer’s organization will be responsible for maintaining the delivered software).
-        </p>
-        <h3 id="asumptions"> Assumptions and Dependencies </h3>
-        <p>
-            List any assumed factors (as opposed to known facts) that could affect the requirements stated in the SRS. These could include third-party or commercial components that you plan to use, issues around the development or operating environment, or constraints. The project could be affected if these assumptions are incorrect, are not shared, or change. Also identify any dependencies the project has on external factors, such as software components that you intend to reuse from another project, unless they are already documented elsewhere (for example, in the vision and scope document or the project plan).
-        </p>
+        <ul style="list-style-type:disc">
+            <li>Interface built with only HTML and CSS</li>
+            <li>PHP database</li>
+            <li>No helping tools</li>
+            <li>Limited language options(HTML,CSS,Javascript)</li>
+        </ul>
     </section>
-
     <section id="externalRequirements">
         <h2>External Interface Requirements</h2>
         <h3 id="userInterface"> User Interfaces</h3>
+        <p>The user will have the possibility to sign in to his account </p>
+        <img src="images/signin.png" alt="ss" style="width:80%;height:40%">
+        <p>(or to register through a similar page), or to navigate without an account, but with some limitations. From here, he can search for codes, other users, rate their work and learn. He can also upload his work, but an unauthenticated user can't set his own attributes for the post.</p>
+        <img src="images/upload.png" alt="ss" style="width:80%;height:40%">
+        <p>Also, an user signed in, has the benefit to set his own profile , besides his posts.</p>
+        <img src="images/edit.png" alt="ss" style="width:80%;height:50%">
+       
+        <h3 id="hardwareInterfaces"> Hardware, Software and Communication Interfaces</h3>
         <p>
-            Describe the logical characteristics of each interface between the software product and the users. This may include sample screen images, any GUI standards or product family style guides that are to be followed, screen layout constraints, standard buttons and functions (e.g., help) that will appear on every screen, keyboard shortcuts, error message display standards, and so on. Define the software components for which a user interface is needed. Details of the user interface design should be documented in a separate user interface specification.
-        </p>
-        <h3 id="hardwareInterfaces"> Hardware Interfaces</h3>
-        <p>
-            Describe the logical and physical characteristics of each interface between the software product and the hardware components of the system. This may include the supported device types, the nature of the data and control interactions between the software and the hardware, and communication protocols to be used.
-        </p>
-        <h3 id="softwareInterfaces"> Software interfaces</h3>
-        <p>
-            Describe the connections between this product and other specific software components (name and version), including databases, operating systems, tools, libraries, and integrated commercial components. Identify the data items or messages coming into the system and going out and describe the purpose of each. Describe the services needed and the nature of communications. Refer to documents that describe detailed application programming interface protocols. Identify data that will be shared across software components. If the data sharing mechanism must be implemented in a specific way (for example, use of a global data area in a multitasking operating system), specify this as an implementation constraint.
-        </p>
-        <h3 id="communicationInterface"> Communication Interface</h3>
-        <p>
-            Describe the requirements associated with any communications functions required by this product, including e-mail, web browser, network server communications protocols, electronic forms, and so on. Define any pertinent message formatting. Identify any communication standards that will be used, such as FTP or HTTP. Specify any communication security or encryption issues, data transfer rates, and synchronization mechanisms.
+            The functions and features will be made using PHP database and Javascript.
         </p>
     </section>
 
@@ -199,7 +199,7 @@
     <section id="nonfunctionalFeatures">
         <h2 id="security"> Security</h2>
         <p>
-            Specify any requirements regarding security or privacy issues surrounding use of the product or protection of the data used or created by the product. Define any user identity authentication requirements. Refer to any external policies or regulations containing security issues that affect the product. Define any security or privacy certifications that must be satisfied.        </p>
+        The account security is provided by each user's choice for password.</p>
     </section>
 
     <section id="bibliography">
@@ -208,6 +208,11 @@
 
     <section id="authors">
         <h2>Authors</h2>
+        Gruia Carmen-Andreea
+        <br>
+        Hirean Catalin-Alexandru
+        <br>
+        Mitrof Denis-Ozgean
     </section>
 
 
