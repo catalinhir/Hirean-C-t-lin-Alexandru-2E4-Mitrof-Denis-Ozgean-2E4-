@@ -88,7 +88,7 @@ header nav ul li a:hover{
 
 
 section{
-    background-color: rgba(34, 34, 34, 1);
+    background-image: url("images/planet.png");
     color: gray;
     padding: 0;
     display: flex;
@@ -103,12 +103,18 @@ section.tripple_section div.home{
     border: solid;
 
 }
-
+#borderimg {
+    border: 10px solid transparent;
+    padding: 15px;
+    border-image: url("images/pngegg.png") 30 round;
+}
 .tripple_section p2{
     margin-left: auto;
     margin-right: auto;
     text-align: center;
 }
+
+
 
 .restofpage{
     margin:auto;
@@ -143,9 +149,10 @@ section.tripple_section div.home{
     list-style-type: none;
     border-left: 2px solid;
     padding: 0.01em 10px;
-    color:#58a6ff;
+    color:orange;
     border-bottom: 2px solid;
     border-color:blue;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 .downtext{
