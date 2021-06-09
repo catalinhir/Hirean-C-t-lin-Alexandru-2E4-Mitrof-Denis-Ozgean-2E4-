@@ -29,7 +29,7 @@ $errors = array();
 
       if (!$db_select) {
 
-    die("Baza de date prezinta o eroare: " . mysqli_error($connection));
+    die("Baza de date prezinta o eroare: " . mysqli_error($db));
 }
 
     $results = mysqli_query($db, $sql) or die ('Error $db or $sql');
@@ -37,7 +37,7 @@ $errors = array();
     while($row = mysqli_fetch_array($results)){
    
       if ($row['username'] == $username && $row['password'] == $password) {
-
+          $_SESSION['id'] = $row['id'];
             $_SESSION['username'] = $username;
           $_SESSION['succes'] = '<p style="text-align:center;color: red">Bine ai revenit, '.$username.'! Ce faci astazi?</p>'.'<br>';
           header('location: index.php');
