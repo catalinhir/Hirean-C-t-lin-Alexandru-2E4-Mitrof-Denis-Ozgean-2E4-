@@ -47,7 +47,7 @@
                     echo '<li><a href="SignIn.php" class="crazylogin"><i class="fas fa-sign-in-alt"></i> Sign In/Up</a></li>';
                 }
                 ?>
-                <li><a href="uploadCode.php"><i class="fas fa-upload"></i> Upload</a></li>
+                <li><a href="createRepository.php"><i class="fas fa-upload"></i> Upload</a></li>
                 <?php if (isset($_SESSION["username"])): ?>
                     <p><strong><? echo $_SESSION["username"]; ?></strong></p>
                     <li><a href="index.php?logout='1'" class="alog">| Logout <i class="far fa-times-circle"></i></a>
@@ -68,7 +68,7 @@
                 if ($row = $sth->fetch()) {
                     ?>
                     <?php if (isset($_SESSION["username"])) :
-                        if ($str == $_SESSION["username"]) :   //TODO verifica daca esti in sesiune.
+                        if ($str == $_SESSION["username"]) :   //TODO verifica daca esti in sesiune. ! VERIFICAT
                             ?>
                             <span><a href="ProfilePage.php"
                                      class="searchresult"><?php echo $row->username; ?></a></span>
