@@ -5,7 +5,9 @@ require_once('connectdbinreg.php');
 
 $errors = array();
 
-		session_start();
+if (!isset($_SESSION)) {
+    session_start();
+}
 
         if(isset($_POST['create'])) {
 

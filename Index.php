@@ -124,7 +124,8 @@
                     $result = $sth->fetchAll();
                     $maxrow = $sth->fetch(PDO::FETCH_ASSOC);
                     foreach ($result as $row){ ?>
-                    <li>   <?php echo $row->name; ?> </li> <?php
+                    <ul>   <span><a href="Repository.php?repo=<?php echo $row->name ?>"
+                                     class="searchresult"><?php echo $row->name; ?></a></span> </ul> <?php
                     }
                     ?>
                 </ul>

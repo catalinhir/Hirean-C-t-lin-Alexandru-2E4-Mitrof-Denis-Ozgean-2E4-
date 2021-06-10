@@ -159,10 +159,13 @@
         </ul>
     </div>
     <div class="choose_file">
+        <form action="uploadCodeValid.php" method="post" enctype="multipart/form-data">
         <label for="choose_file">
-            <input type="file" id="choose_file">
-            <span>Choose Files</span>
+            <input name="filename" type="file" id="choose_file">
+            <span>Choose File</span>
+            <input type="submit" name="submit" value="Upload">
         </label>
+        </form>
     </div>
 </div>
 <script src="main.js"></script>
