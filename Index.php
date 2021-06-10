@@ -111,10 +111,22 @@
             <div class="asidemobile">
                 <h1>Repositories:</h1>
                 <ul>
-                    <li>rep1</li>
-                    <li>rep2</li>
-                    <li>rep3</li>
-                    <li>rep4</li>
+                    <?php
+                    $con = new PDO("mysql:host=localhost;dbname=inreguser", 'root', '');
+                    if (isset($_SESSION["username"])) {
+                        $whatIWant = $_SESSION['username'];
+                        $sth = $con->prepare("SELECT name FROM repo r JOIN users u ON r.user_id = u.id AND u.username='$whatIWant'");
+                    }elseif (!isset($_SESSION["username"])){
+                        $sth = $con->prepare("SELECT name FROM repo WHERE user_id is null ");
+                    }
+                    $sth->setFetchMode(PDO:: FETCH_OBJ);
+                    $sth->execute();
+                    $result = $sth->fetchAll();
+                    $maxrow = $sth->fetch(PDO::FETCH_ASSOC);
+                    foreach ($result as $row){ ?>
+                    <li>   <?php echo $row->name; ?> </li> <?php
+                    }
+                    ?>
                 </ul>
             </div>
             <span>Best Code</span>
