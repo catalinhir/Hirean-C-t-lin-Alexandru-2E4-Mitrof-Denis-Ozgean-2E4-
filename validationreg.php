@@ -3,8 +3,10 @@
 require_once('connectdbinreg.php');
 
 $errors = array();
-			
-		session_start();
+if (session_status() == PHP_SESSION_NONE) {
+    session_start();
+}
+
 
         if(isset($_POST['send'])) {
 

@@ -2,12 +2,12 @@
 
 require_once('connectdbinreg.php');
 
-
-$errors = array();
-
-if (!isset($_SESSION)) {
+if (session_status() == PHP_SESSION_NONE) {
     session_start();
 }
+$errors = array();
+
+
 
         if(isset($_POST['create'])) {
 

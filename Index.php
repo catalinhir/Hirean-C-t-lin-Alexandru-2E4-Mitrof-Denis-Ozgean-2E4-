@@ -1,4 +1,6 @@
-<?php include('validationreg.php'); ?>
+<?php include('validationreg.php');
+error_reporting(0);
+?>
 <!DOCTYPE html>
 <html lang="ro">
 <head>
@@ -48,6 +50,7 @@
                 }
                 ?>
                 <li><a href="createRepository.php"><i class="fas fa-upload"></i> Upload</a></li>
+                <li><a href="AdaugaCod.php"><i class="fas fa-upload"></i>Paste it</a></li>
                 <?php if (isset($_SESSION["username"])): ?>
                     <p><strong><? echo $_SESSION["username"]; ?></strong></p>
                     <li><a href="index.php?logout='1'" class="alog">| Logout <i class="far fa-times-circle"></i></a>
@@ -116,16 +119,16 @@
                     if (isset($_SESSION["username"])) {
                         $whatIWant = $_SESSION['username'];
                         $sth = $con->prepare("SELECT name FROM repo r JOIN users u ON r.user_id = u.id AND u.username='$whatIWant'");
-                    }elseif (!isset($_SESSION["username"])){
+                    } elseif (!isset($_SESSION["username"])) {
                         $sth = $con->prepare("SELECT name FROM repo WHERE user_id is null ");
                     }
                     $sth->setFetchMode(PDO:: FETCH_OBJ);
                     $sth->execute();
                     $result = $sth->fetchAll();
                     $maxrow = $sth->fetch(PDO::FETCH_ASSOC);
-                    foreach ($result as $row){ ?>
-                    <ul>   <span><a href="Repository.php?repo=<?php echo $row->name ?>"
-                                     class="searchresult"><?php echo $row->name; ?></a></span> </ul> <?php
+                    foreach ($result as $row) { ?>
+                        <ul>   <span><a href="Repository.php?repo=<?php echo $row->name ?>"
+                                        class="searchresult"><?php echo $row->name; ?></a></span></ul> <?php
                     }
                     ?>
                 </ul>
@@ -134,7 +137,13 @@
             <div class="home_first">a</div>
             <div class="home_second">b</div>
             <article>
-                basbd
+
+                <?php include('figuri2.php');
+                $crud = new CRUD();
+                echo 'Other Pastes:' ;
+                echo $crud->afiseazaListaPaste()
+
+                ?>
             </article>
 
         </div>
