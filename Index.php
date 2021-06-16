@@ -30,12 +30,7 @@ error_reporting(0);
                 <li><a href="AboutUs.php">Despre</a></li>
                 <li><a href="Documentation.php">Documentatie</a></li>
                 <li><a href="Contact.php">Contact</a></li>
-                <form method="post">
-                    <label>Search</label>
-                    <input type="text" name="search">
-                    <input type="submit" name="submit">
 
-                </form>
 
             </ul>
 
@@ -49,12 +44,19 @@ error_reporting(0);
                     echo '<li><a href="SignIn.php" class="crazylogin"><i class="fas fa-sign-in-alt"></i> Sign In/Up</a></li>';
                 }
                 ?>
+
                 <li><a href="createRepository.php"><i class="fas fa-upload"></i> Upload</a></li>
                 <li><a href="AdaugaCod.php"><i class="fas fa-upload"></i>Paste it</a></li>
                 <?php if (isset($_SESSION["username"])): ?>
                     <p><strong><? echo $_SESSION["username"]; ?></strong></p>
                     <li><a href="index.php?logout='1'" class="alog">| Logout <i class="far fa-times-circle"></i></a>
                     </li>
+                    <form method="post" id="searchbar">
+                            <label>Search</label>
+                            <input type="text" name="search">
+                            <input type="submit" name="submit">
+
+                        </form>
                 <?php endif ?>
             </div>
             <?php

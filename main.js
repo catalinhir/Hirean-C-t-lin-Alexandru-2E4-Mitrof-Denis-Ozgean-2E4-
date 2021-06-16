@@ -6,3 +6,12 @@ function myFunction() {
     x.style.display = "block";
   }
 }
+function schimbaVersiunea() {
+  var x = document.getElementById("118932");
+  x.action = "editdelete.php";
+}
+
+function schimbaVersiunea1(){
+  var x = document.getElementById("118932");
+  x.action = "";
+}

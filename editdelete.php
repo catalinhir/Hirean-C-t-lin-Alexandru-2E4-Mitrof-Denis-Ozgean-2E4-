@@ -16,16 +16,16 @@ if (isset($_SESSION['id']))
     $id = $_SESSION['id'];
 else
     $id = null;
+if (isset($_SERVER['HTTP_REFERER'])) {
+    $previous = $_SERVER['HTTP_REFERER'];
+}
 if (isset($_POST['editeaza'])) {
     echo $crud->verificaAcelasiText($codId, $text);
     if ($crud->verificaAcelasiText($codId, $text)) {
 
         $crud->modificaPaste($codId, $text);
 }
-    if (isset($_SERVER['HTTP_REFERER'])) {
-        $previous = $_SERVER['HTTP_REFERER'];
-    }
- header('Location:' . $previous);
+
 
 }
 if (isset($_POST['sterge'])) {
@@ -33,10 +33,10 @@ if (isset($_POST['sterge'])) {
     if (isset($_SERVER['HTTP_REFERER'])) {
         $previous = $_SERVER['HTTP_REFERER'];
     }
-    header('Location:' . $previous);
 
 }
-//TODO: DELETE
+header('Location:' . $previous);
+
 
 /*$sql = "SELECT * FROM pastes WHERE code_id = ?";  ASTA E PT EDIT
 $cerere = BD::getConnection()->prepare($sql);
