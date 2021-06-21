@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Your Code Name</title>
-    <link rel="stylesheet" href="codePage.css">
+    <link rel="stylesheet" href="CSS/codePage.css">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
     <script src="https://kit.fontawesome.com/db21b656c0.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -153,6 +153,6 @@
     lower section
 </section>
 <footer>footer</footer>
-<script src="main.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>

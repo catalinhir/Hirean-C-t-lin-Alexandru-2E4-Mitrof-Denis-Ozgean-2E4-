@@ -12,6 +12,7 @@ if (!isset($_SESSION)) {
 $text = $_POST['formname23'];
 $codId = $_SESSION['cod_id'];
 $crud = new CRUD();
+
 if (isset($_SESSION['id']))
     $id = $_SESSION['id'];
 else
@@ -19,6 +20,7 @@ else
 if (isset($_SERVER['HTTP_REFERER'])) {
     $previous = $_SERVER['HTTP_REFERER'];
 }
+
 if (isset($_POST['editeaza'])) {
     echo $crud->verificaAcelasiText($codId, $text);
     if ($crud->verificaAcelasiText($codId, $text)) {
@@ -35,7 +37,14 @@ if (isset($_POST['sterge'])) {
     }
 
 }
-header('Location:' . $previous);
+//header("Location: $previous");
+
+if(isset($_POST['addButton'])){
+    $contributor=$_POST['addcontri'];
+    $crud->addContributor($codId, $contributor);
+    echo $codId . ' ' . $contributor;
+}
+
 
 
 /*$sql = "SELECT * FROM pastes WHERE code_id = ?";  ASTA E PT EDIT

@@ -5,16 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="CSS/Style.css">
 </head>
 <body prefix="schema: http://schema.org">
     <header>
         <nav>
             <ul>
-                <li><a href="Homepage.html"> Home</a></li>
-                <li><a href="AboutUs.html"> About Us</a></li>
-                <li><a href="Contact.html"> Contact</a></li>
-                <li><a href="Scholarly.html"> Documentation</a></li>
+                <li><a href="Index.php"> Home</a></li>
+                <li><a href="AboutUs.php"> About Us</a></li>
+                <li><a href="Contact.php"> Contact</a></li>
+                <li><a href="Scholarly.php"> Documentation</a></li>
                 
                 
             </ul>

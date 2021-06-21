@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Upload Code</title>
-    <link rel="stylesheet" href="uploadCode.css">
+    <link rel="stylesheet" href="CSS/uploadCode.css">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
 </head>
 <body>
@@ -168,6 +168,6 @@
         </form>
     </div>
 </div>
-<script src="main.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>

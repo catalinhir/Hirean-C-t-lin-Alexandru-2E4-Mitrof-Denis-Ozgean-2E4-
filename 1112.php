@@ -1,11 +1,10 @@
 <?php
 
 require_once('connectdbinreg.php');
-$errors = array();
-if (session_status() == PHP_SESSION_NONE) {
-    session_start();
-}
 
+$errors = array();
+			
+		session_start();
 
         if(isset($_POST['send'])) {
 
@@ -34,7 +33,6 @@ if (session_status() == PHP_SESSION_NONE) {
                 
             array_push($errors, 'Campul de Email este gol!');
           }
-
 
           if (empty($_POST['username'])) {
                 
@@ -79,5 +77,4 @@ if (session_status() == PHP_SESSION_NONE) {
       header('location: index.php');
       
     }
-
 ?>

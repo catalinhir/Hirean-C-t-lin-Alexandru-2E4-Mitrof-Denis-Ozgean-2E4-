@@ -33,6 +33,8 @@ else {
     $cerere->execute([$numeCod, $textPaste, 1, $id, $limbaj]);
 }
 
+header("Location: index.php");
+
 /*$sql = "SELECT * FROM pastes WHERE code_id = ?";  ASTA E PT EDIT
 $cerere = BD::getConnection()->prepare($sql);
 $cerere->execute([$id]);

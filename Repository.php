@@ -15,7 +15,7 @@ if (session_status() == PHP_SESSION_NONE) {
         $whatIWant = substr($actual_link, strpos($actual_link, "="));
         echo $whatIWant;
         $_SESSION['repoName'] = $whatIWant ?></title>
-    <link rel="stylesheet" href="uploadCode.css">
+    <link rel="stylesheet" href="CSS/uploadCode.css">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
 </head>
 <body>

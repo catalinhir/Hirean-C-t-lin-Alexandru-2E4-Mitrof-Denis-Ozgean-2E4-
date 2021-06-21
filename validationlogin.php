@@ -15,6 +15,8 @@ $errors = array();
         array_push($errors, 'Campul de Username este gol!!');  
     }
 
+
+
     if (empty($_POST['password'])) {
       
         array_push($errors, 'Campul de Password este gol!!'); 
